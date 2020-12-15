@@ -1,5 +1,7 @@
 #libraries
 
+# do this before ! (($ python -m pip install pytube))
+
 from pytube import YouTube 
 
 #url
