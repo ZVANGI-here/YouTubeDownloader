@@ -8,14 +8,14 @@ from pytube import YouTube
 
 url = input('Enter The Video Link here : ')
 yt = YouTube(url)
-vids = yt.streams.all()
+videos = yt.streams.all()
 
 
 #quality_download   
 #|------------|---------|
 
 i = 1
-for stream in vids:
+for stream in videos:
     print (str(i) + " - " + str(stream))
     i += 1
 
@@ -23,7 +23,7 @@ stream_quality = int(input('Enter The quality number you want : '))
 
 #place_download & downloading
 
-video = vids[stream_quality - 1]
+video = videos[stream_quality - 1]
 print ('The Download place is in [[C:\Users\ZVANGI\Downloads]]')
 video.download("C:\Users\ZVANGI\Downloads")
 
